@@ -1,9 +1,7 @@
 var Joi = require('joi')
 
 var baseOptsSchema = Joi.object().keys({
-  ddpVersion: Joi.string().valid('1').default('1'),
-  autoReconnect: Joi.boolean().default(true),
-  autoReconnectTimer: Joi.number().integer().default(500)
+  ddpVersion: Joi.string().valid('1').default('1')
 })
 
 module.exports = Joi.alternatives().try(
