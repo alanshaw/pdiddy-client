@@ -103,7 +103,7 @@ PDiddyClient.prototype._message = function (data) {
 
   // remove document from collection
   } else if (data.msg === 'removed') {
-    if (self.maintainCollections && data.collection) {
+    if (self.collections && data.collection) {
       name = data.collection
       id = data.id
 
