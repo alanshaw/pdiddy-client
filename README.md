@@ -24,5 +24,14 @@ client.connect('<Peer ID>', function (err) {
     if (err) throw err
     console.log('Method result:', res)
   })
+
+  // Subscribe to publication
+  client.subscribe('<subscription name>', ['<arg1>', '<arg2>', '...'], function (err) {
+    if (err) throw err
+    console.log('Subscription ready!')
+  })
+
+  // Observe changes to collection
+  client.observe('<collection name>', onAdded, onUpdated, onRemoved)
 })
 ```
