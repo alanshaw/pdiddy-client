@@ -1,6 +1,6 @@
 # pdiddy-client
 
-P2P DDP client using PeerJS.
+P2P DDP client using PeerJS. Code is based _heavily_ on the excellent [ddp-client](https://github.com/oortcloud/node-ddp-client).
 
 ## Example
 
